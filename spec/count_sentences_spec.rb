@@ -1,3 +1,29 @@
+class String
+
+  def sentence?
+
+    self.end_with?(".")
+    end
+
+  def question?
+    self.end_with?("?") 
+  end
+
+  def exclamation?
+  self.end_with?("!")
+  end
+
+  def count_sentences
+self.split(/[.?!]+/).count
+  end
+end
+
+
+
+
+
+
+
 describe String do
   describe "#sentence?" do 
     it "returns true if the string that you are calling this method on ends in a period." do 
