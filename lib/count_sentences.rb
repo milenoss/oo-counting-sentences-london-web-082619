@@ -6,8 +6,7 @@ class String
     self.end_with(".")
   end
   
-  def 
-end
+
 end
 
 
